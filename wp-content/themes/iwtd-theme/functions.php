@@ -1,4 +1,15 @@
 <?php
+function wtd_setup()
+{
+    load_theme_textdomain('wtd');
+    // register_nav_menu('main-menu', 'Main Menu');
+    // register_nav_menu('footer-menu', 'Footer Menu');
+    register_nav_menus(array(
+        'main-menu' => __('Main Menu', 'wtd'),
+        // 'footer-menu' => __('Footer Menu', 'wtd')
+    ));
+}
+add_action('after_setup_theme', 'wtd_setup');
 
 function wtd_scripts()
 {
