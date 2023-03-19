@@ -20,3 +20,18 @@ function wtd_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'wtd_scripts');
+
+// Register Sidebar
+function wtd_widgets()
+{
+    register_sidebar(array(
+        'name' => __('Main Sidebar', 'wtd'),
+        'id' => 'sidebar-1',
+        'description' => __('Sidebar Widget Area', 'wtd'),
+        'before_widget' => '<div class="about-menu">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4">',
+        'after_title' => '</h4>'
+    ));
+}
+add_action('widgets_init', 'wtd_widgets');
