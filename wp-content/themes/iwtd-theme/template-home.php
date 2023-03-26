@@ -1,6 +1,6 @@
-<?php get_header();
-
-/* Template Name: Blog Page */
+<?php
+/* Template Name: Home Page */
+get_header();
 
 ?>
 <!-- Banner Start Here -->
