@@ -1,9 +1,14 @@
 <?php
 function wtd_setup()
-{
+{   // Language
     load_theme_textdomain('wtd');
+
+    // Title
+    add_theme_support('title-tag');
     // register_nav_menu('main-menu', 'Main Menu');
     // register_nav_menu('footer-menu', 'Footer Menu');
+
+    // Register Menu
     register_nav_menus(array(
         'main-menu' => __('Main Menu', 'wtd'),
         // 'footer-menu' => __('Footer Menu', 'wtd')

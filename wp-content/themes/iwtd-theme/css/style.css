@@ -132,6 +132,12 @@ h6 {
   text-transform: capitalize;
   margin-bottom: 25px;
 }
+.page-left h4{
+  text-align: left;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
 .single-service img {
 }
 .single-service p {
@@ -320,5 +326,19 @@ h6 {
   padding: 3px;
   height: 300px;
 }
+.pages {
+  overflow: hidden;
+  padding: 40px 0;
+}
 
+.page-left {
+  float: left;
+  width: 670px;
+  margin-right: 30px;
+}
+
+.page-sidebar {
+  float: right;
+  width: 300px;
+}
 
