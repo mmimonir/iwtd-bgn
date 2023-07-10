@@ -5,6 +5,7 @@ function wtd_setup()
 
     // Title
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
     // register_nav_menu('main-menu', 'Main Menu');
     // register_nav_menu('footer-menu', 'Footer Menu');
 
